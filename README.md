@@ -54,12 +54,12 @@ PresentationData JSON을 URL-safe 문자열로 인코딩합니다.
 # 1. 프로젝트 생성
 npx canvaroom init
 
-# 2. Vercel 배포 (한 번만)
+# 2. 발표마다 pitch로 청취자 링크 생성
 cd canvaroom
-npx canvaroom deploy --prod
-
-# 3. 발표마다 pitch로 청취자 링크 생성
 npx canvaroom pitch
+
+# 3. vercel에 배포 후 웹 링크 청취자에게 전달
+npx canvaroom deploy --vercel
 ```
 
 ## Roadmap
